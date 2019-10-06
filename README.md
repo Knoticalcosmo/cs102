@@ -1,2 +1,2 @@
-# cs102
-CSCI 102 repository for class projects
+# Website Files
+Files for github to host my site... how did you get here?
