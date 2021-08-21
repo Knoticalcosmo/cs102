@@ -47,7 +47,7 @@ main
     margin-left: auto;
     padding: 20px;
     margin-top: 20px;
-    background-color: rgba(0, 0, 0, 100);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #block
