@@ -7,7 +7,7 @@ body
     background-image: url("images/Europa.jpg");
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
-    background-position: top center;
+    background-position: top;
     background-size: 100%;
 }
 
