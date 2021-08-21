@@ -7,8 +7,8 @@ body
     background-image: url("images/Europa.jpg");
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-position: top center;
+    background-size: 100%;
 }
 
 header
@@ -18,7 +18,7 @@ header
 
 h1
 {
-    color: rgb(211, 33, 33);
+    color: white;
 }
 
 nav
@@ -46,11 +46,7 @@ main
     margin-left: auto;
     padding: 20px;
     margin-top: 20px;
-    background-image: url("images/Europa2.jpg");
-    /*background-repeat: no-repeat;*/
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 200%;
+    background-color: rgba(0, 0, 0, 100);
 }
 
 #block
