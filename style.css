@@ -5,10 +5,11 @@
 body
 {
     background-image: url("images/Europa.jpg");
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
     background-size: 100%;
+    background-color: rgb(15, 15, 15);
 }
 
 header
