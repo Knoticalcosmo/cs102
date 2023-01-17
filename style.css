@@ -1,23 +1,30 @@
 /* Author  : Jon Stoneman   */
 /* Version : 1.0            */
 /* Date    : October 16 2019*/
-
 body
 {
+    padding: 0;
+    margin: 0;
     background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-position: top;
     background-size: 100%;
     background-color: rgb(15, 15, 15);
     font-family: "Calibri", sans-serif;
 }
 
-header
+#logo {
+    width: 50%;
+    height: 50%;
+}
+
+header#main
 {
     text-align: center;
-    margin-bottom: 50px;
-
+    padding-bottom: 15%;
+    padding-top: 5%;
+    background-image: linear-gradient(rgba(1,250,60,0) 60%, rgb(15, 15, 15) 100%);
 }
 
 h1
@@ -33,23 +40,58 @@ h1
 
 nav
 {
+    margin: auto;
     margin-top: 10px;
     margin-bottom: 20px;
     color: white;
     text-align: center;
     font-style: inherit;
-    word-spacing: 20px;
-    font-size: 30px;
     font-family: "Futura Md BT", sans-serif;
     letter-spacing: 8px;
     font-size: 30px;
     text-transform: uppercase;
+    width: 80%;
 }
 
 a
 {
     color: white;
     text-decoration: none;
+}
+
+#nav
+{
+    width: 30%;
+    text-align: center;
+}
+
+.rainbow
+{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip:text;
+    background-image: url("images/GradientBar.svg");
+    background-clip: text;
+    background-size: 100%;
+}
+
+#social
+{
+    width: 15%;
+    height: 15%;
+    text-align: center;
+}
+
+#center
+{
+    width: 100%;
+    text-align: center;
+}
+
+#video
+{
+    width: 90%;
+    height: 600px;
 }
 
 .link
@@ -71,13 +113,14 @@ main
     background-color: rgb(15, 15, 15);
     color:white;
     font-size: 25px;
-    text-indent: 20px;
+    /* text-indent: 20px; */
     margin: auto;
+    margin-top: 5%;
+    text-align: left;
 }
 
 p
 {
-    width: 90%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -104,44 +147,147 @@ footer
     text-align: center;
     font-size: 15px;
 }
+@media (min-width: 700px) {
+    #nav:hover
+    {
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -moz-background-clip:text;
+        background-image: url("images/GradientBar.svg");
+        background-clip: text;
+        background-size: 100%;
+    }
 
-.c2l{
-    width: 50%;
-    float: left;
-    margin: auto;
+    .halfLeft{
+        width: 49%;
+        float: left;
+        margin: auto;
+        margin-right: 1%;
+        text-align: right;
+    }
+
+    .halfRight{
+        width: 49%;
+        float: right;
+        margin: auto;
+        margin-left: 1%;
+        text-align: left;
+    }
+
+    .thirdLeft{
+        width: 33%;
+        float: left;
+        margin: auto;
+        margin-right: 1%;
+        text-align: right;
+    }
+
+    .thirdMid{
+        width: 32%;
+        float: left;
+        margin: 34%;
+        text-align: center;
+    }
+
+    .thirdRight{
+        width: 33%;
+        float: right;
+        margin: auto;
+        margin-left: 1%;
+        text-align: left;
+    }
+
+    .twordRight{
+        width: 64%;
+        float: right;
+        margin: auto;
+        margin-left: 2%;
+        text-align: left;
+    }
+
+    .twordLeft{
+        width: 64%;
+        float: left;
+        margin: auto;
+        margin-right: 2%;
+        text-align: right;
+    }
+
+    .clearfloat
+    {
+        clear: both;
+    }
 }
+@media (max-width: 700px) {
+    
+    .halfLeft{
+        width: 100%;
+        text-align: center;
+    }
 
-.c2r{
-    width: 50%;
-    float: right;
-    margin: auto;
-}
+    .halfRight{
+        width: 100%;
+        text-align: center;
+    }
 
-.c3l{
-    width: 33%;
-    float: left;
-    margin: auto;
-}
+    .thirdLeft{
+        width: 100%;
+        text-align: center;
+    }
 
-.c3r{
-    width: 33%;
-    float: right;
-    margin: auto;
-}
+    .thirdMid{
+        width: 100%;
+        text-align: center;
+    }
 
-.c23r{
-    width: 66%;
-    float: right;
-    margin: auto;
-}
+    .thirdRight{
+        width: 100%;
+        text-align: center;
+    }
 
-.c23l{
-    width: 66%;
-    float: left;
-    margin: auto;
-}
+    .twordRight{
+        width: 100%;
+        text-align: center;
+    }
 
-.clearfloat
-{
-    clear: both;
+    .twordLeft{
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    nav
+    {
+        margin: 0%;
+        padding: 25px 0 25px 0;
+        width: 100%;
+        font-size: 10px;
+        background-image: url("images/GradientBar.svg");
+        background-size: 100%;
+    }
+
+    #nav
+    {
+        border-radius: 30%;
+        font-size: 10px;
+        padding: 20px 2% 20px 2%;
+        margin: auto;
+    }
+
+    #social
+    {
+        width: 40%;
+        height: 40%;
+    }
+    #video
+    {
+        height: 200px;
+    }
+    h1{
+        font-size: 40px;
+    }
 }
