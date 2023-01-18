@@ -21,8 +21,8 @@ body
 
 img
 {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 header
@@ -89,7 +89,7 @@ a
 
 #social
 {
-    height: 150px;
+    width: 150px;
     text-align: center;
 }
 
@@ -288,12 +288,6 @@ footer
         padding: 20px 2% 20px 2%;
         margin: auto;
     }
-
-    #social
-    {
-        width: 40%;
-        height: 40%;
-    }
     #video
     {
         height: 200px;
@@ -303,7 +297,7 @@ footer
     }
     #social
     {
-        height: 70px;
-        width: auto;
+        width: 70px;
+        height: auto;
     }
 }
