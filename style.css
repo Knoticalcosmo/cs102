@@ -19,6 +19,18 @@ body
     height: 50%;
 }
 
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+header
+{
+    text-align: center;
+    background-image: linear-gradient(rgba(1,250,60,0) 60%, rgb(15, 15, 15) 100%);
+}
+
 header#main
 {
     text-align: center;
