@@ -21,8 +21,8 @@ body
 
 img
 {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 header
@@ -89,8 +89,7 @@ a
 
 #social
 {
-    width: 15%;
-    height: 15%;
+    height: 150px;
     text-align: center;
 }
 
@@ -301,5 +300,10 @@ footer
     }
     h1{
         font-size: 40px;
+    }
+    #social
+    {
+        height: 70px;
+        width: auto;
     }
 }
