@@ -18,6 +18,29 @@
     </header>
     <main>
         <h1>Server List</h1>
+        <!-- Script for playercount -->
+        <script>
+            fetch('https://api.mcstatus.io/v2/status/java/sparksmp.us')
+            .then(response => response.json())
+            .then(data => handleServerStatus(data,"status"));
+
+            fetch('https://api.mcstatus.io/v2/status/java/wwu.world')
+            .then(response => response.json())
+            .then(data => handleServerStatus(data,"status2"));
+    
+            function handleServerStatus(data,id){
+                if(data.status=='error'){
+                    console.log(data.error);
+                    return false;
+                }
+                else if(data.players.online == 1){
+                const playerCounter = document.getElementById(id);
+                playerCounter.innerHTML = data.players.online + " player online out of " + data.players.max + "<br>" + "Running " + data.version.name_clean;}
+                else{
+                const playerCounter = document.getElementById(id);
+                playerCounter.innerHTML = data.players.online + " players online out of " + data.players.max + "<br>" + "Running " + data.version.name_clean;}
+            } 
+        </script>
         <!-- Sparksmp -->
         <div id="block">
             <div class="thirdLeft">
@@ -28,15 +51,35 @@
             <br>
             <div class="twordRight">
                 <h2>Spark of Life SMP</h2>
-                The Spark of Life SMP server is a whitelisted server to play on with friends. To join on the server you will have to read the rules and introduce yourself on the discord which can be accesed by clicking <a href="https://discord.gg/3CzFdjxmAs">here</a> or on the server image. <br>
-                <i class="rainbow">Currently the server is down for maintnence</i>
+                The Spark of Life SMP server is a whitelisted server to play on with friends. To join on the server you will have to read the rules and introduce yourself on the discord which can be accesed by clicking <a href="https://discord.gg/3CzFdjxmAs" class="rainbow">here</a> or on the server image. <br>
+                <i class="rainbow"><br>
+                <span id="status">Server offline or undergoing maintnence</span></i>                
             </div>
             <div class="clearfloat"></div>
             <br>
         </div>
         <br>
+
+        <!-- dormcraft -->
+        <div id="block">
+            <div class="thirdRight">
+                <a href="https://discord.gg/qs3xU9TXHf">
+                    <img src="../images/dormcraft.webp" alt="discord logo" >
+                </a>
+            </div>
+            <br>
+            <div class="twordLeft">
+                <h2>Dormcraft SMP</h2>
+                Dormcraft is a server that was built by Western Washington University students for college students to play on. Good community and large world size that you can join at wwu.world. They also have a discord server <a href="https://discord.gg/qs3xU9TXHf" class="rainbow">here</a> and a website you can visit at <a href="https://dormcraft.net" class="rainbow">dormcraft.net</a> for additional information<br>
+                <i class="rainbow"><br>
+                <span id="status2">Server offline or undergoing maintnence</span></i>
+                
+            </div>
+            <div class="clearfloat"></div>
+            <br>
         </div>
         <br>
+
     </main>
     <br>
     <footer>
